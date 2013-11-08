@@ -1,0 +1,50 @@
+    <div class="headerTree">
+      <div class="fmControls">
+        <a class="fmControlsFirst backLink" id="backb">
+          <i class="back"></i>Back
+        </a>
+        <a id="addtoms">
+          <i class="fileAdd"></i>Add this file to my Snoxter
+        </a>
+        <a id="dlorig">
+          <i class="originAdd"></i>Download original
+        </a>
+        <span id="edbtn" style="display: none;">
+          <a><i class="imgedBut"></i>EDIT</a>
+        </span>        
+        <span id="lbtntop" style="display: none;">
+          <button style="width:65px;height:28px;cursor:pointer;" type="button" id="like_button" class="lbtn like">
+            <span class="lbd">
+              <i class="iconLike"></i>Like
+            </span>
+            <span style="" class="howMany">
+              <i></i><span id="likes">0</span>
+            </span>
+          </button>
+        </span>
+      </div>
+    </div>    
+
+    <div id="showContainer">
+      
+    </div>
+
+    <div id="descriptionContainer">
+      <div id="myFile" class="whoShared" style="">
+        File: <span class="filename"></span>
+        <br>
+        Type: <span class="filetype"></span>
+        <br>
+        Size: <span class="size"></span>
+        </div>
+      <div id="sharedFile" class="whoShared" style="display: none;">
+        <span class="ava">
+          <img class="avatar">
+        </span>
+        <a href="#" class="owner_name"></a>
+        <br>
+        <span class="shared_description"></span>
+        <br>
+        <span class="shared_filename"></span>
+      </div>
+    </div>

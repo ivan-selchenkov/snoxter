@@ -1,0 +1,74 @@
+<div class="jp-video-play" style="display: none;"/>
+<div class="playerBox" id="jp_interface_1">
+    <div class="songCurrent" id="plsn">
+        <p>
+            <span class="songName" />&nbsp;<span class="time" />
+        </p>
+    </div>
+    <ul class="playerControls">
+        <li><a href="#" class="playLeft"></a></li>
+        <li><a href="#" class="play"></a></li>
+        <li><a href="#" class="pause"></a></li>
+        <li><a href="#" class="playRight"></a></li>
+        <li>
+            <div class="progress">
+                <div class="progressA" style="height:8px;">
+                    <div class="progressOn" style="width:0%;">
+                        <a href="#" class="pointer"></a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="sound">
+                <a href="#" class="ruporOn"></a>
+                <a href="#" class="ruporOff" style="display:none;"></a>
+                <a href="#" class="volume">
+                    <div id="volume_control" style="position:absolute;margin-left:20px;width:20px;">
+                        <ul>
+                            <li id="vce1" class="loud"><span class="vol1"></span></li>
+                            <li id="vce2" class="loud"><span class="vol2"></span></li>
+                            <li id="vce3" class="halfloud"><span class="vol3"></span></li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="hiddenPlaylist" id="plistd" style="display: none;">
+    
+    <div class="songsListContainer" id="plistdiv"/>
+
+    <div class="playerBox songsListControlsBox">
+        <label>Playlist:</label>
+        <select class="playlist_select" id="playlist_select" name="playlist_select">
+            <option value="1">Main</option>
+        </select>
+
+        <div style="float:right;width:48px;">
+            <ul class="songsListControls">
+                <li>
+                    <a style="width:46px;" id="add_playlist_button">
+                        <i class="inflist"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="playerBox">
+    <a class="playlistBtn" id="playlistShowHide">
+        <span class="playlistBtnspn" id="playlist_name"></span>
+        <i class="playlistExpander" id="showHideButton"></i>
+    </a>
+</div>
+
+<div id="new_playlist_dialog" title="Create new playlist" style="display: none;">
+<table border="0" style="margin-top:5px;">
+<tr>
+    <td>Playlist name:&nbsp;</td>
+    <td><input style="height:18px; width:130px;" name="newpln" id="newpln" maxlength="15"></td>
+</tr>
+</table>
+</div>

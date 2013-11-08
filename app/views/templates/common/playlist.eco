@@ -1,0 +1,25 @@
+<% if @models.length > 0: %>
+    <% for model in @models: %>
+    <li song-id='<%= model.get("id") %>' style="cursor: pointer">
+        <span class="songsListNum">
+            <span class="listNum"><%= model.get("order") %>.</span>
+            <span class="playing"><i class="ruporWhite"></i></span>
+        </span>
+        <%= model.display_song() %>
+        <!--
+        <a id="pltrs6" href="#" onclick="delpl(9);return false;" style="visibility: hidden;" ;=""><div class="del2"></div></a>
+        -->
+        <span class="songsListTime"><%= model.get("length") %></span>
+    </li>
+    <% end %>
+<% else: %>
+    <br>
+    <b>Playlist is empty</b>
+    .
+    <br>
+    <br>
+    <b>Upload File</b>
+    you wanna add here, then press '
+    <b>Add to Playlist</b>
+    ' button.    
+<% end %>

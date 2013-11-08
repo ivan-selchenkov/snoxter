@@ -1,0 +1,34 @@
+<input type="hidden" name="uid" id="auid" value="">
+<input type="hidden" name="hash" id="ahash" value="">
+<input type="hidden" name="auth" id="aauth" value="">
+<div style="margin-top:7px;">
+  <div id="addfn"></div>
+</div>
+
+<div id="saveto">
+  &nbsp;<font color=grey>Save to:</font>
+  <select name="mufol" id="mufol">
+    <option value="">Loading folders...</option>
+  </select>
+</div>
+
+<div id="addmusic">
+  <input type="checkbox" checked id="iplay" name="iplay" value="yes">
+  <font color=grey>
+    Add to my playlist 
+    <select id="apls" name="apls">
+      <option value="">Loading playlists...</option>
+    </select>
+  </font>
+</div>
+
+<div id="misharediv">
+  <input type="checkbox" checked id="ishare2" name="ishare2" value="yes">
+  <font color=grey><b>Share with my friends, Post on my Timeline</b></font>
+</div>
+
+<div style="margin-top:15px;text-align:center;">
+  <a class="btnPrime" id="add_file_button">
+    <font color=white><b> ADD </b></font>
+  </a>
+</div>

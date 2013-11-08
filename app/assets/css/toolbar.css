@@ -1,0 +1,47 @@
+.toolbar{
+    background: url("../imgs/toolbar.png") no-repeat left 0;
+    padding-top: 80px;
+    min-height: 300px;
+}
+.toolbarInfo1{
+    background: url("../imgs/info.png") no-repeat 4px 2px;
+    width:27.9%;
+    display: block;
+    float: left;
+    padding-left:6%;
+    white-space: nowrap;
+    padding-right: 20px;
+}
+.toolbarInfo2{
+    width:29.9%;
+    display: block;
+    float: left;
+    padding-left:10%;
+    white-space: nowrap;
+}
+.toolbarInfo1 li, .toolbarInfo2 li{
+    padding:6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.toolbarInfoT1{
+    background: url("../imgs/check.png") no-repeat 4px 2px;
+   width:40%;
+    display: block;
+    float: left;
+    padding-left:8%;
+    padding-right: 2%;
+}
+.toolbarInfoT2{
+    background: url("../imgs/check.png") no-repeat 4px 2px;
+    width:40%;
+    display: block;
+    float: left;
+    padding-left:8%;
+    padding-right: 2%;
+}
+.toolbarInfoT1 li, .toolbarInfoT2 li{
+    padding:6px;
+    font-size: 13px;
+    padding-bottom: 20px;
+}

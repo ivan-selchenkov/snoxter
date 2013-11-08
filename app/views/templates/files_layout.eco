@@ -1,0 +1,35 @@
+<div id="navigator_relative">
+<div class="helper_block helpContainer">
+    <div class="helpContainerLeft">
+        <div class="helpContainerRight">
+
+        </div>
+    </div>
+</div>
+<div  id="sharing_mode" class="mode_friends">
+    <div id="umodearr" style="position: absolute; left: 3px; z-index: 9000;">
+        <img src="/imgs/arrow_right.png" height="39">
+    </div>
+    <div class="optionsTips2" id="sharing_mode_select">
+        <ul>
+            <li id="mode_only_me">
+                <i class="priv"></i>
+                <font color="#333">Only me</font>.<br>
+                Store it privately for me.
+            </li>
+            <li id="mode_friends">
+                <i class="friend"></i>
+                <font color="#333">Friends</font> will see the link in their
+                News Feed.
+            </li>
+            <li id="mode_custom">
+                <i class="custom"></i>
+                <font color="#333">Selected Friends</font> will receive invitation with the link. 
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="player_block"></div>
+<div class="main_block"></div>
+<div class="footer sharLayoutFooter"></div>
+</div>

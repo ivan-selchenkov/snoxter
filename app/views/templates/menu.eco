@@ -1,0 +1,23 @@
+<ul class="nav nav-tabs" id="nav_menu">
+    <li id="menu_my_sharium">
+        <a href="#"><span class="logoIcon">&nbsp;&nbsp;My Snoxter</span></a>
+    </li>
+    <li id="menu_trending">
+        <a href="#trending">Trending</a>
+    </li>
+    <li id="menu_feed">
+        <div class="badge" id="badge1" style="display: none;">
+            <div id="badge2" style="width:20px; text-align:center;">1</div>
+        </div>
+        <a href="#feed">Feed</a>
+    </li>
+    <li id="menu_toolbar">
+        <a href="#toolbar">PC & Mobile</a>
+    </li>
+    <li id="menu_help">
+        <a href="#help">Help</a>
+    </li>
+    <li id="t_6">
+        <span class="logo"></span>
+    </li>
+</ul>

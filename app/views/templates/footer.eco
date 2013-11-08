@@ -1,0 +1,33 @@
+<div class="sharLayoutFooterInner">
+    <ul>
+        <li id="progressInfo" style="display: none;"><span id="sused" style="color: inherit;">0 MB</span> <span id="stotal" style="color: inherit;">0.0 Gb</span></li>
+        <li id="progressBox" class="progressBox" style="display: none;">
+            <div class="progress">
+                <div class="progressOn" id="usedprc" style="width:0%;">
+                    <span class="progressRightCorner"></span>
+                </div>
+            </div>
+        </li>
+<!--         <li>
+            <span>
+                <a href="#getpro" style="font-size:14px;z-index:5000;">Get more space!</a>
+            </span>
+        </li>
+ -->        <li id="uprog1" style="display: none; cursor: pointer;">
+            <div>
+                <div class="optionsTips" id="upldiv" style="bottom:45px;"></div>
+                <div>Uploading:</div>
+            </div>
+        </li>
+        <li class="progressBox" id="uprog2" style="display: none; cursor: pointer;">
+            <div class="progress">
+                <div class="progressOn" id="uprogbar" style="width:0%;">
+                    <span class="progressRightCorner"></span>
+                </div>
+            </div>
+        </li>
+        <li class="sharLayoutFooterLink">
+            <a href="#activity">Activity Log</a>
+        </li>
+    </ul>
+</div>

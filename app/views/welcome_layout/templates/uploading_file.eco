@@ -1,0 +1,34 @@
+<div class="uploading_file">
+    <div style="float: left">
+        <div style="color: black; width:180px;height:15px;overflow:hidden;margin-bottom:2px;margin-right:5px;">
+            <%= @upload.name %>
+        </div>
+        <div class="upload_status">
+            56% of <%= @upload.size %> bytes
+        </div>
+    </div>
+    <div style="float: left">
+        <a href="#" class="btn3 cancel_upload" style="color:#5E666E;">Cancel</a>
+    </div>
+</div>
+
+<!-- <table border="0" class="uploading_file">
+    <tr>
+        <td style="color:#333;">
+            <div style="width:180px;height:15px;overflow:hidden;margin-bottom:2px;margin-right:5px;">
+                <%= @upload.name %>
+            </div>
+        </td>
+        <td rowspan="2">
+            <a href="#" class="btn3 cancel_upload" style="color:#5E666E;">Cancel</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span class="upload_status">
+                56% of <%= @upload.size %> bytes
+            </span>
+        </td>
+    </tr>
+</table>
+ -->

@@ -1,0 +1,8 @@
+<div class="viewer_file_content">
+    <div class="clip_image_box60">
+        <img border="0" src="<%= @model.get_preview_path() %>">
+    </div>
+    <div class="title">
+        <%= @model.get("filename") %>
+    </div>
+</div>

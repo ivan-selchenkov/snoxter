@@ -1,0 +1,80 @@
+<div id="c_4" class="sharLayoutRightContainer"
+     style="border-top: 1px solid #e0e0e0;border-radius: 4px 0px 0px 0px;">
+    <div class="help">
+
+        <ul class="helpInfo1">
+            <li> — How Sharium can help me?<br>
+
+                <div style="padding-left:20px;padding-top:10px;font-weight:normal;">
+                    <table border="0"
+                           style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 13px;color:#555555;"
+                           cellpadding="2">
+                        <tbody>
+                        <tr>
+                            <td><img src="img/x/you.png"><img src="img/x/arr2.png"><img src="img/x/flash.png"></td>
+                            <td>&nbsp;<b>Store</b> your files privately. <b>Access</b> your files <b>from anywhere</b>.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/x/flash.png"><img src="img/x/arr2.png">
+                                <img src="img/x/you.png"></td>
+                            <td>&nbsp;<b>Store</b> your files privately. Use Sharium as your <b>backup</b>.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/x/flash.png"><img src="img/x/arr2.png">
+                                <img src="img/x/headphone.png"></td>
+                            <td>&nbsp;<b>Listen to your music</b>. Sharium is your Media Center.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/x/you.png"><img src="img/x/arr2.png"><img src="img/x/friends.png"></td>
+                            <td>&nbsp;<b>Share</b> your files<b> with your friends</b>.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/x/you.png"><img src="img/x/arr2.png"><img src="img/x/friend.png"></td>
+                            <td>&nbsp;<b>Send</b> your files <b>to selected friend(s)</b> only.</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+
+
+            <li> — Which files are supported?<br>
+
+                <div style="padding-left:20px;padding-top:10px;font-weight:normal;">
+                    <table border="0"
+                           style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 13px;color:#555555;"
+                           cellpadding="2">
+                        <tbody>
+                        <tr>
+                            <td><img src="img/fm.png"></td>
+                            <td>&nbsp;<b>Music/Audio</b> (.aac, .mp3, .wav)</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/fv.png"></td>
+                            <td>&nbsp;<b>Video</b> (.mpg, .avi, .flv, .wmv)<!--</td--></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/fd.png"></td>
+                            <td>&nbsp;<b>Documents</b> (.doc, .pdf, .xls)</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/fs.png"></td>
+                            <td>&nbsp;<b>Software</b> (.exe, .zip, .msi)</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/fo.png"></td>
+                            <td>&nbsp;<b>Any</b> other files types, <b>up to 2GB</b></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+</div>

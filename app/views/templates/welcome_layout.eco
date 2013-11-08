@@ -1,0 +1,13 @@
+<table class="sharLayout">
+    <tr>
+        <td id="sharLayoutRight" class="sharLayoutRight" width="100%"></td>
+        <td id="sharLayoutLeft" class="sharLayoutLeft">
+            <div id="player_div"></div>
+            <div id="banner_div"></div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="sharLayoutFooter" id="sharLayoutFooter">
+    </td>
+    </tr>
+</table>

@@ -1,0 +1,124 @@
+<div class="balloon">
+<div class="balloon_info">
+    <div class="info_wrapper">
+        <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="balloon_image">
+                    <div class="image_wrapper">
+                        <img class="balloon_image" src="<%= @item.get_preview() %>">
+                    </div>
+                </td>
+                <td>
+                    <div class="text_wrapper">
+                        <div class="paddingTop"></div>
+                        <span class="balloon_name"><%= @item.get("name") %></span><br>
+                        <span class="balloon_size">
+                        <% if @item.get("type") == "directory": %>
+                            <%= @item.get("contains") %>
+                        <% else: %>
+                            <%= @item.get("size")  %>
+                        <% end %>
+                        </span>
+
+                        <% if @item.get("extra") and @item.get("extra") != "": %> 
+                            <%= '(' + @item.get("extra") + ')' %>
+                        <% end %>
+                        <br>
+                        <%= @item.get("date") %>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <table style="width: 100%; ">
+        <tr><td>
+        <ul class="fileListControls">
+            <% if @item.is_visible("share"): %>                
+                <li class="button_share"><a><i class="share"></i></a></li>
+            <% end %>
+            <% if @item.is_visible("download"): %>
+                <li class="button_download"><a href="/v2/getfile.php?fn=<%= @item.get('filepath') %>&attachment=1"><i class="download"></i></a></li>
+            <% end %>
+            <% if @item.is_visible("link"): %>
+                <li class="button_direct_link"><a><i class="href"></i></a></li>
+            <% end %>
+            <% if @item.is_visible("delete"): %>
+                <li class="button_remove"><a><i class="del"></i></a></li>
+            <% end %>
+            <% if @item.is_visible("playlist"): %>
+                <li class="button_add_to_playlist"><a><i class="add"></i></a></li>
+            <% end %>
+        </ul>
+        </td></tr>
+        <tr class="link_row">
+            <td>
+                <input type="text" readonly value="Loading link">
+            </td>
+        </tr>
+    </table>
+
+    <div class="sharing_menu">
+        <div class="menu_container">
+        <div class="overlay"></div>
+        <ul>
+            <li data-sharing="0" <% if @item.get_sharing_type() == 0: %> class="selected" <% end %> >
+                <a>
+                    <div>
+                        <div class="sharing_menu_icon">
+                            <img src="imgs/sharing_private_icon.png">
+                        </div>
+                        <div>
+                            <font color="#333">Do not share</font>.<br>
+                            File is stored privately for you.
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li data-sharing="1"  <% if @item.get_sharing_type() == 1: %> class="selected" <% end %> >    
+                <a>       
+                    <div>
+                        <div class="sharing_menu_icon">       
+                            <img src="imgs/sharing_friends_icon.png">
+                        </div>
+                        <div>
+                            <font color="#333">All friends</font> will see this file in their
+                            News Feed and on your Timeline.
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li data-sharing="2"  <% if @item.get_sharing_type() == 2: %> class="selected" <% end %> >
+                <a>
+                    <div>
+                        <div class="sharing_menu_icon">
+                            <img src="imgs/sharing_custom_icon.png">
+                        </div>
+                        <div>
+                            Invitation containing this file will be sent to <font color="#333">friends you
+                            selected.</font>            
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="item_for_folder" style="display: none">    
+                <a>
+                    <div>
+                        <div class="sharing_menu_icon">
+                            <img src="imgs/sharing_custom_icon.png">
+                        </div>
+                        <div>
+                            <font color="#333">Collaboration:</font> selected friends will get full rights for this
+                            folder.
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+
+<div class="balloonPointer"></div>
+</div>

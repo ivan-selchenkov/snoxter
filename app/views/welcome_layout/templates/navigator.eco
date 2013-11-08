@@ -1,0 +1,49 @@
+<ul class="headerTree">
+    <li class="fmControls2">
+        <!--a href="#" id="fmControlsCheck" class="fmControlsCheck"></a-->
+        <a id="fmbut1" class="fmControlsFirst" href="#">
+            <i class="newFolderAdd"></i>New folder<span></span>
+        </a>
+        <a id="fmbut3" href="#">
+            <i class="searchFilesAdd"></i>Search<span></span>
+        </a>
+    </li>
+    <li class="headerTreeLeft">
+        <div>
+            <div style="padding-top:9px;padding-left:9px;float:left;">
+                <a href="#">My Snoxter</a>
+            </div>
+            <span id="breadcrumbs"></span>
+            <div style="float:left;" id="ftree"></div>
+        </div>
+    </li>
+</ul>
+
+<div class="subheaderTree" id="create_new_folder_form" style="display:none;">
+    <div class="inBox">
+        <div style="float:left;">
+            <input style="width: 86%" name="newfln" id="input_new_folder" maxlength=32 type="text" placeholder="Folder Name" size="20">
+        </div>
+        <a class="exit" id="close_new_folder_form"></a>
+        <span><a class="btnIn" id="button_create_folder">Create</a></span>
+    </div>
+</div>
+<div class="subheaderTree" id="search_form" style="display: none;">
+    <div class="inBoxs">
+        <input name="searchp" id="searchp" type="text" placeholder="Enter part of name or extension to filter files" size="20">
+        <ul class="fileFilter fileFilterSearch">
+            <li id="file_type_all" class="selected" value=""><a>All</a></li>
+            <li id="file_type_image" value="3"><a class="fileFilterImage"></a></li>
+            <li id="file_type_video" value="2"><a class="fileFilterVideo"></a></li>
+            <li id="file_type_music" value="1"><a class="fileFilterMusic"></a></li>
+        </ul>
+        <a class="exit" id="close_search_form"></a>
+        <span><a class="btnIn" id="search_button"><i class="searchF"><s></s></i></a></span>
+    </div>
+</div>
+
+
+<!--browse tree-->
+<div class="clear clearBord"></div>
+<div id="files_container"></div>
+<!--end of browser tree-->

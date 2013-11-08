@@ -1,0 +1,38 @@
+<div style="position: relative; margin: 0 auto; background: url('../imgs/fileshow_music.png') no-repeat 10px 40px; width: 310px; height: 400px">
+<span style="top: 270px; left: 56px; position: absolute;">
+    <div id="jquery_jplayer_2" class="jp-jplayer" style="height:100px;width:100px;"></div>
+
+    <div style="margin-top:35px;margin-left:auto;margin-right:auto;width:200px;">
+    <div id="jp_interface_2" class="PlayerBox">
+        <ul class="playerControls">
+            <li><a href="#" class="play" style="display: none; "></a></li>
+            <li><a href="#" class="pause" style=""></a></li>
+            <li>
+                <div class="progress">
+                    <div class="progressA" style="height: 8px; width: 100%; "> 
+                        <div class="progressOn" style="width:0%;">
+                            <a href="#" class="pointer"></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="sound">
+                    <a href="#" class="ruporOn" style=""></a>
+                    <a href="#" class="ruporOff" style="display: none; "></a>
+                    <a href="#" class="volume">
+                        <div id="volct1" style="position:absolute;margin-left:20px;width:20px;">
+                            <ul>
+                                <li id="vce1" class="loud"><span class="vol1"></span></li>
+                                <li id="vce2" class="loud"><span class="vol2"></span></li>
+                                <li id="vce3" class="halfloud"><span class="vol3"></span></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    </div>
+</span>
+</div>

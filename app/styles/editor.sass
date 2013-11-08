@@ -1,0 +1,32 @@
+@import "_base.sass"
+
+#editorLayout
+  position: relative
+  width: $total_width
+  height: $total_height
+  @include roundcorners(3px)
+
+  #editorContainer
+    width: $total_width - 2px
+    height: $total_height - $footer_height
+
+    .showFile
+      border-left: 1px solid #e0e0e0
+      border-right: 1px solid #e0e0e0
+      height: $total_height - $footer_height
+      display: block
+      overflow: hidden
+      padding: 0
+      width: $total_width - 2px
+      position: relative
+
+    .headerTree
+      border-left: 1px solid #e0e0e0
+      border-right: 1px solid #e0e0e0
+      border-top-left-radius: 5px
+      border-top-right-radius: 5px
+
+  #editorFooter
+    width: $total_width
+    height: $footer_height
+    clear: both

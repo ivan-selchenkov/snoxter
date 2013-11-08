@@ -1,0 +1,9 @@
+<div class="otherFilesH headerTree">
+    <div id="wsh" class="whoShared">
+        <span id="showed_folder"></span>
+    </div>
+</div>
+
+<div id="filesContainer">        
+    <ul></ul>
+</div>

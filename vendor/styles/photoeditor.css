@@ -1,0 +1,509 @@
+.ui_button {
+    cursor: pointer;
+}
+
+.showed_submenu {
+    z-index: 1000;
+}
+#target_image {
+    height: auto;
+    max-width: 600px;
+    max-height: 450px;
+    margin: auto;
+}
+
+.target_image_box {
+    height: 450px;
+}
+.fileInfoPhotoeditor {text-align: center;}
+.fmControls a.doneBtn {float: right; padding-left: 6px;}
+.doneBtn span {text-transform: none; font-size: 11px;}
+.fmControls a.exit {
+    background: url("../img/exit.png") no-repeat scroll center 11px transparent;
+    display: block;
+    float: right;
+    height: 40px;
+    overflow: hidden;
+    width: 20px;
+    margin: 0 0px 0 10px;
+    border: 0;
+}
+.fmControls a {
+    padding: 6px 6px 6px 0;
+    cursor: pointer;
+}
+.fmControls a.peActions {
+    display: block;
+    height: 40px;
+    overflow: hidden;
+    width: 40px;
+    margin: 0 0px 0 10px;
+    border: 0;
+}
+.fmControls a.orient {
+    background: transparent url("../img/photoeditor.png") no-repeat scroll 11px 8px;
+}
+.fmControls a.orient:hover {
+    background-position: 11px -24px;
+}
+.fmControls a.crop {
+    background: url("../img/photoeditor.png") no-repeat scroll -30px 8px transparent;
+}
+.fmControls a.crop:hover {
+    background-position: -30px -24px;
+}
+.fmControls a.effects {
+    background: url("../img/photoeditor.png") no-repeat scroll -69px 8px transparent;
+}
+.fmControls a.effects:hover {
+    background-position: -69px -24px;
+}
+.fmControls a.frames {
+    background: url("../img/photoeditor.png") no-repeat scroll -107px 8px transparent;
+}
+.fmControls a.frames:hover {
+    background-position: -107px -24px;
+}
+
+.disabledBtn {opacity: 0.6; cursor: default;}
+
+.orientOptions {
+    left:6px;
+    width:auto;
+    padding:0 2px 0 5px;
+}
+.cropOptions .optionPointerTop { 
+    left:68px;
+}
+.effectsOptions .optionPointerTop { 
+    left:127px;
+}
+.framesOptions .optionPointerTop { 
+    left:184px;
+}
+.orientOptions li {
+    float:left;
+    width:41px;
+    height:41px;
+    padding:0;
+    margin: 5px 3px 5px 0;
+}
+.orientOptions li:hover {
+    background: #6FADD8;
+    border-color: #6FADD8 #6FADD8 #3182B8;
+}
+.orientOptionsBtn {
+    display: block;
+    width: 41px;
+    height: 41px;
+}
+.orientOptions .orient1 a {
+    background: url("../img/photoeditor.png") no-repeat scroll 1px -56px transparent;
+}
+.orientOptions .orient1 a:hover {
+    background: url("../img/photoeditor.png") no-repeat scroll 1px -86px transparent;
+}
+.orientOptions .orient2 a {
+    background: url("../img/photoeditor.png") no-repeat scroll -34px -56px transparent;
+}
+.orientOptions .orient2 a:hover {
+    background: url("../img/photoeditor.png") no-repeat scroll -34px -86px transparent;
+}
+.orientOptions .orient3 a {
+    background: url("../img/photoeditor.png") no-repeat scroll -70px -56px transparent;
+}
+.orientOptions .orient3 a:hover {
+    background: url("../img/photoeditor.png") no-repeat scroll -70px -86px transparent;
+}
+.orientOptions .orient4 a {
+     background: url("../img/photoeditor.png") no-repeat scroll -106px -55px transparent;
+ }
+.orientOptions .orient4 a:hover {
+    background: url("../img/photoeditor.png") no-repeat scroll -106px -85px transparent;
+}
+.cropOptions .crop1 a {
+    background: url("../img/photoeditor.png") no-repeat scroll 1px -116px transparent;
+}
+.cropOptions .crop1 a:hover {
+    background: url("../img/photoeditor.png") no-repeat scroll 1px -146px transparent;
+}
+.cropOptions .crop2 a{
+    background: url("../img/photoeditor.png") no-repeat scroll -34px -116px transparent;
+}
+.cropOptions .crop2 a:hover {
+    background: url("../img/photoeditor.png") no-repeat scroll -34px -146px transparent;
+}
+.cropOptions .crop3 a {
+    background: url("../img/photoeditor.png") no-repeat scroll -70px -116px transparent;
+}
+.cropOptions .crop3 a:hover {
+    background: url("../img/photoeditor.png") no-repeat scroll -70px -146px transparent;
+}
+.cropOptions .crop4 a {
+    background: url("../img/photoeditor.png") no-repeat scroll -106px -115px transparent;
+}
+.cropOptions .crop4 a:hover {
+    background: url("../img/photoeditor.png") no-repeat scroll -106px -145px transparent;
+}
+
+.cropOptions .crop5 a {
+    background: url("../img/photoeditor.png") no-repeat scroll -142px -115px transparent;
+}
+.cropOptions .crop5 a:hover {
+    background: url("../img/photoeditor.png") no-repeat scroll -142px -145px transparent;
+}
+
+.cropOptions .crop6 a {
+    background: url("../img/photoeditor.png") no-repeat scroll -178px -115px transparent;
+}
+.cropOptions .crop6 a:hover {
+    background: url("../img/photoeditor.png") no-repeat scroll -178px -145px transparent;
+}
+
+.effectsOptions li {
+    border:0;
+    width:46px;
+    height:46px;
+    opacity: 0.5;
+}
+.effectsOptions li:hover {
+    opacity: 1;
+}
+.effectsOptions li.disabledLI:hover {
+    opacity: 0.5; cursor: default;
+}
+
+.effectsOptions li.e_active.disabledLI {
+    opacity: 1; cursor: default;
+}
+
+.effectsOptions li.e_active {
+    opacity: 1;
+}
+.orientOptions li.effect1 {
+    background: url("../img/photoeditor.png") no-repeat scroll 0px -188px transparent;
+}
+.orientOptions li.effect_sepia {
+    background: url("../img/photoeditor.png") no-repeat scroll -54px -188px transparent;
+}
+.orientOptions li.effect_grayscale {
+    background: url("../img/photoeditor.png") no-repeat scroll -108px -188px transparent;
+}
+.orientOptions li.effect_vivid {
+    background: url("../img/photoeditor.png") no-repeat scroll -216px -188px transparent;
+}
+.orientOptions li.effect_polaroid {
+    background: url("../img/photoeditor.png") no-repeat scroll -270px -188px transparent;
+}
+.orientOptions li.effect_posterize {
+    background: url("../img/photoeditor.png") no-repeat scroll -324px -188px transparent;
+}
+.orientOptions li.effect_invert {
+    background: url("../img/photoeditor.png") no-repeat scroll -378px -188px transparent;
+}
+.orientOptions li.effect_erode {
+    background: url("../img/photoeditor.png") no-repeat scroll -486px -188px transparent;
+}
+.orientOptions li.effect_dilate {
+    background: url("../img/photoeditor.png") no-repeat scroll -432px -188px transparent;
+}
+.orientOptions li.effect_pixelize {
+    background: url("../img/photoeditor.png") no-repeat scroll -541px -188px transparent;
+}
+.orientOptions li.effect_sobel {
+    background: url("../img/photoeditor.png") no-repeat scroll -162px -188px transparent;
+}
+.orientOptions li.effect_threshold {
+    background: url("../img/photoeditor.png") no-repeat scroll -594px -188px transparent;
+}
+.orientOptions li.effect_sketch {
+    background: url("../img/photoeditor.png") no-repeat scroll -648px -188px transparent;
+}
+.orientOptions li.effect_toon {
+    background: url("../img/photoeditor.png") no-repeat scroll -702px -188px transparent;
+}
+
+
+.orientOptions li.frame1 {
+    background: url("../img/photoeditor.png") no-repeat scroll 0px -248px transparent;
+}
+.orientOptions li.frame2 {
+    background: url("../img/photoeditor.png") no-repeat scroll -54px -248px transparent;
+}
+.orientOptions li.frame3 {
+    background: url("../img/photoeditor.png") no-repeat scroll -108px -248px transparent;
+}
+.orientOptions li.frame4 {
+    background: url("../img/photoeditor.png") no-repeat scroll -162px -248px transparent;
+}
+
+.orientOptions li.frame5 {
+    background: url("../img/photoeditor.png") no-repeat scroll -216px -248px transparent;
+}
+.orientOptions li.frame6 {
+    background: url("../img/photoeditor.png") no-repeat scroll -270px -248px transparent;
+}
+.orientOptions li.frame7 {
+    background: url("../img/photoeditor.png") no-repeat scroll -324px -248px transparent;
+}
+.orientOptions li.frame8 {
+    background: url("../img/photoeditor.png") no-repeat scroll -378px -248px transparent;
+}
+.orientOptions li.frame9 {
+    background: url("../img/photoeditor.png") no-repeat scroll -432px -248px transparent;
+}
+.orientOptions li.frame10 {
+    background: url("../img/photoeditor.png") no-repeat scroll -486px -248px transparent;
+}
+
+.orientOptions li.frame11 {
+    background: url("../img/photoeditor.png") no-repeat scroll -540px -248px transparent;
+}
+.orientOptions li.frame12 {
+    background: url("../img/photoeditor.png") no-repeat scroll -594px -248px transparent;
+}
+.orientOptions li.frame13 {
+    background: url("../img/photoeditor.png") no-repeat scroll -648px -248px transparent;
+}
+.orientOptions li.frame14 {
+    background: url("../img/photoeditor.png") no-repeat scroll -702px -248px transparent;
+}
+.orientOptions li.frame15 {
+    background: url("../img/photoeditor.png") no-repeat scroll -756px -248px transparent;
+}
+.orientOptions li.frame16 {
+    background: url("../img/photoeditor.png") no-repeat scroll -810px -248px transparent;
+}
+.orientOptions li.frame17 {
+    background: url("../img/photoeditor.png") no-repeat scroll -864px -248px transparent;
+}
+.orientOptions li.frame18 {
+    background: url("../img/photoeditor.png") no-repeat scroll -918px -248px transparent;
+}
+.orientOptions li.frame19 {
+    background: url("../img/photoeditor.png") no-repeat scroll -972px -248px transparent;
+}
+.orientOptions li.frame20 {
+    background: url("../img/photoeditor.png") no-repeat scroll -1026px -248px transparent;
+}
+.orientOptions li.frame21 {
+    background: url("../img/photoeditor.png") no-repeat scroll -1080px -248px transparent;
+}
+
+
+.fmControls a.saveChange{
+    background: url("../img/photoeditor.png") no-repeat scroll -34px -307px transparent;
+    margin-left: 40px;
+}
+.fmControls a.cancelChange{
+    background: url("../img/photoeditor.png") no-repeat scroll 1px -307px transparent;
+    margin-left: 0;
+}
+
+.fmControls a.redoChange{
+    background: url("../img/photoeditor.png") no-repeat scroll -34px -357px transparent;
+    margin-left: 0;
+}
+/*
+.fmControls a.redoChange.disabledBtn, a.undoChange.disabledBtn {
+    opacity: 0.5;
+}
+*/
+
+.fmControls a.undoChange{
+    background: url("../img/photoeditor.png") no-repeat scroll 1px -357px transparent;
+    margin-left: 40px;
+}
+
+#image_editor {
+    width: 100%; /*760px;*/
+    height: 560px;
+}
+
+
+.headerTreeSubMenu {
+    background: url("../img/photoeditorsubbg.png") repeat-x scroll 0 0;
+    height: 41px;
+    display: block;
+    width: 100%;
+}
+.progressTune {
+    background: url("../img/photoeditor.png") no-repeat scroll 0 -595px transparent;
+    width: 239px;
+    margin : 3px 0 0 0px;
+}
+.progressTune .pointer {
+    background: url("../img/photoeditor.png") no-repeat scroll 0 -617px transparent;
+}
+.tuneSettings {
+    display: block;
+    float: left;
+    height: 21px;
+    margin: 0;
+    padding: 14px 0 6px 0;
+    color: #5E666E;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 50%;
+}
+.tuneSettings li {float:left; display: block; padding: 0 0px;}
+.tuneSettings li.tuneSettingsLabel {padding: 1px 8px 0 20px;}
+.refreshTune {
+    background: url("../img/photoeditor.png") no-repeat scroll -120px -319px transparent;
+    width:17px;
+    height: 17px;
+    display: block;
+    float: left;
+    padding: 0 4px;
+    cursor: pointer;
+}
+.tuneSettingsIcon {
+    width:19px;
+    height: 17px;
+    display: block;
+    float: left;
+    padding: 0 4px;
+}
+.scale1{background: url("../img/photoeditor.png") no-repeat scroll -170px -319px transparent;}
+.scale2{background: url("../img/photoeditor.png") no-repeat scroll -220px -319px transparent;}
+.rotate1{background: url("../img/photoeditor.png") no-repeat scroll -270px -319px transparent;}
+.rotate2{background: url("../img/photoeditor.png") no-repeat scroll -320px -319px transparent;}
+
+/* ENCHANGE */
+.fmControls a.enchance {
+    background: url("../img/photoeditor.png") no-repeat scroll -144px 8px transparent;
+}
+.fmControls a.enchance:hover {
+    background-position: -144px -24px;
+}
+#enchance_submenu {
+    left: 90px;
+}
+#enchance_submenu .optionPointerTop {
+    left:160px;
+}
+
+.carousel_container {
+    padding: 0 20px;
+    width: 254px;
+    height: 55px;
+    overflow: hidden;
+}
+
+.carousel_next {
+    width: 12px;
+    height: 21px;
+    cursor: pointer;
+    background: url("/img/photoeditor.png") no-repeat scroll -52px -416px transparent;
+}
+
+.carousel_prev {
+    width: 14px;
+    height: 21px;
+    cursor: pointer;
+    background: url("/img/photoeditor.png") no-repeat scroll -12px -416px transparent;
+}
+
+.carousel_container ul {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+}
+
+#enchance_submenu li {
+    height: 57px;
+}
+
+.carousel_button {
+    background-color: #e5eaeb;
+}
+
+#enchance_submenu li .orientoptionsbtn {
+    height: 57px;
+}
+.frames_submenu.optionPointerTop {
+    left: 190px;
+    top: 1px;
+    z-index: 1005;
+}
+.effects_submenu.optionPointerTop {
+    left: 133px;
+    top: 1px;
+    z-index: 1005;
+}
+
+.orientOptions .hue_saturation a {
+    background: url("../img/photoeditor.png") no-repeat scroll -164px -457px transparent;
+}
+.orientOptions .hue_saturation a:hover {
+    background: url("../img/photoeditor.png") no-repeat scroll -164px -514px transparent;
+}
+
+.orientOptions li.frame22 {
+    background: url("../img/photoeditor.png") no-repeat scroll -1134px -248px transparent;
+}
+.orientOptions li.frame23 {
+    background: url("../img/photoeditor.png") no-repeat scroll -1188px -248px transparent;
+}
+.orientOptions li.frame24 {
+    background: url("../img/photoeditor.png") no-repeat scroll -1242px -248px transparent;
+}
+.orientOptions li.frame25 {
+    background: url("../img/photoeditor.png") no-repeat scroll -1296px -248px transparent;
+}
+.orientOptions li.frame26 {
+    background: url("../img/photoeditor.png") no-repeat scroll -1350px -248px transparent;
+}
+.orientOptions li.frame27 {
+    background: url("../img/photoeditor.png") no-repeat scroll -1404px -248px transparent;
+}
+.orientOptions li.frame28 {
+    background: url("../img/photoeditor.png") no-repeat scroll -1458px -248px transparent;
+}
+.orientOptions li.frame29 {
+    background: url("../img/photoeditor.png") no-repeat scroll -1512px -248px transparent;
+}
+.orientOptions li.frame30 {
+    background: url("../img/photoeditor.png") no-repeat scroll -1566px -248px transparent;
+}
+.orientOptions li.frame32 {
+    background: url("../img/photoeditor.png") no-repeat scroll -162px -248px transparent;
+}
+.orientOptions li.frame31 {
+    background: url("../img/photoeditor.png") no-repeat scroll -1620px -248px transparent;
+}
+#frames_submenu ul {
+    width: 1580px;
+}
+
+/* Coin */
+.optionsTips li i.coin{
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: url("../img/photoeditor.png") no-repeat 0px -654px transparent;
+    top:15px;
+    left:16px;
+}
+
+.orientOptions .contrast_brightness a {
+    background: url("../img/photoeditor.png") no-repeat scroll -56px -457px transparent;
+}
+
+.orientOptions .contrast_brightness a:hover {
+    background: url("../img/photoeditor.png") no-repeat scroll -56px -514px transparent;
+}
+
+.orientOptions .sharp a {
+    background: url("../img/photoeditor.png") no-repeat scroll -272px -457px transparent;
+}
+.orientOptions .sharp a:hover {
+    background: url("../img/photoeditor.png") no-repeat scroll -272px -514px transparent;
+}
+
+.orientOptions .autolevel a {
+    background: url("../img/photoeditor.png") no-repeat scroll -218px -457px transparent;
+}
+.orientOptions .autolevel a:hover {
+    background: url("../img/photoeditor.png") no-repeat scroll -218px -514px transparent;
+}

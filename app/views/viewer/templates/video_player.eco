@@ -1,0 +1,37 @@
+<div id="jp_container_1" class="jp-video jp-video-360p">
+<div id="jquery_jplayer_2" class="jp-jplayer" style="width:100%;height:100%; z-index: 2001"></div>
+
+<div id="jp_interface_2" class="jp-interface">
+    <div class="jp-video-play" style="z-index: 2000;"></div>
+    <ul class="jp-controls" style="padding-left:5px;padding-top:7px;">
+        <li><a href="#" class="play" style=""></a></li>
+        <li><a href="#" class="pause" style=""></a></li>
+        <li>
+            <div class="progress">
+                <div class="progressA" style="height: 8px; width: 100%; "> 
+                    <div class="progressOn" style="width:0%;">
+                        <a href="#" class="pointer"></a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="sound">
+                <a href="#" class="ruporOn" style=""></a>
+                <a href="#" class="ruporOff" style="display: none; "></a>
+                <a href="#" class="volume">
+                    <div id="volct1" style="position:absolute;margin-left:20px;width:20px;">
+                        <ul>
+                            <li id="vce1" class="loud"><span class="vol1"></span></li>
+                            <li id="vce2" class="loud"><span class="vol2"></span></li>
+                            <li id="vce3" class="halfloud"><span class="vol3"></span></li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <!--li><a href="#" class="jp-full-screen" style=""><br>&nbsp;&nbsp;&nbsp;[Full]</a></li-->
+    </ul>
+    <!--div style="filter: alpha(opacity: 30); opacity: 0.3;position: absolute;top: 10px;left: 10px;background: #EEE;padding: 10px;cursor:pointer;" class="jp-restore-screen">Exit</div-->
+</div>
+</div>

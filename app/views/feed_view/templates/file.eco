@@ -1,0 +1,10 @@
+<a href="#view/<%= @file.get('hash') %>/<%= @file.get('uid') %>">
+<div>
+    <div class="clip_image_box95">
+        <img src="<%= @file.get('preview_url') %>"/>
+    </div>
+    <div style="overflow: hidden; text-align: center; width: 95px; height: 35px; word-wrap: break-word;">
+        <%= @file.display_name() %>
+    </div>
+</div>
+</a>

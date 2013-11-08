@@ -1,0 +1,130 @@
+<div class="sharLayoutRightContainer2" id="c_5"
+     style="border-radius: 4px 4px 0 0px;border-right: 1px solid #e0e0e0;">
+
+    <div class="getpro">
+
+
+        <div class="coin c1">
+
+            <ul>
+
+                <li class="header"><h1>Standart</h1></li>
+
+                <li>2 GB of storage space (up to 5 GB)</li>
+                <!--
+                                            <li>Collaboration for 2 users</li>
+                -->
+                <li>Limited upload and download speed</li>
+
+            </ul>
+
+            <div class="price"><b>FREE!</b></div>
+
+        </div>
+
+        <div class="coin c2">
+
+            <ul>
+
+                <li class="header"><h1>Pro</h1></li>
+
+                <li>30 GB of storage space</li>
+                <li>Direct links to the shared files</li>
+                <li>File uploading from links</li>
+                <li>Faster uploads and downloads</li>
+
+            </ul>
+
+            <div class="price">
+
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target=_blank>
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="custom" value="0">
+                    <input type="hidden" name="hosted_button_id" value="8NK65GF9EVKFN">
+                    <table>
+                        <tr>
+                            <td><input type="hidden" name="on0" value=""></td>
+                        </tr>
+                        <tr>
+                            <td><select name="os0">
+                                <option value="Option 1">$29.95 Yearly</option>
+                                <option value="Option 2">$2.99 Monthly</option>
+                            </select></td>
+                        </tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0"
+                           name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+                         height="1">
+                </form>
+
+                <!--
+                $2.99/month or $29.95/year<br/>
+                <a href="#" class="getPro">Buy Pro</a>
+                -->
+            </div>
+
+        </div>
+
+        <div class="coin c3">
+
+            <ul>
+
+                <li class="header"><h1>Pro Ultimate</h1></li>
+                <li>100 GB of storage space</li>
+                <li>Direct links to the shared files</li>
+                <li>File uploading from links</li>
+                <li>Unlimited upload and download speed</li>
+
+
+            </ul>
+
+            <div class="price">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target=_blank>
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="custom" value="0">
+                    <input type="hidden" name="hosted_button_id" value="ZPGEGHCFKGQFU">
+                    <table>
+                        <tr>
+                            <td><input type="hidden" name="on0" value=""></td>
+                        </tr>
+                        <tr>
+                            <td><select name="os0">
+                                <option value="Option 1">$79.95 Yearly</option>
+                                <option value="Option 2">$7.95 Monthly</option>
+                            </select></td>
+                        </tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0"
+                           name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+                         height="1">
+                </form>
+            </div>
+
+        </div>
+
+
+        <a href="#" class="getFS">GET MORE SPACE FOR FREE!</a>
+
+        <div class="clear space" style="height:22px;"></div>
+
+        <ul class="addLinks">
+
+            <li><span>+ 500 MB</span><a class="addLinks2" href="#">Upload and share file</a></li>
+            <li><span>+ 500 MB</span><a class="addLinks2" href="#">Try Sharium toolbar</a></li>
+
+        </ul>
+
+        <ul class="addLinks">
+
+            <li><span>+ 1 GB</span>
+                <a class="addLinks2" href="#">Try Sharium on your mobile</a></li>
+            <li><span>+ 1 GB</span>
+                <a class="addLinks2" href="#">Share something from your mobile</a></li>
+
+        </ul>
+    </div>
+</div>

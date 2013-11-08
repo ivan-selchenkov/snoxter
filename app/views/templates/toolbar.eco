@@ -1,0 +1,55 @@
+<div class="sharLayoutRightContainer" id="c_3" style="border-top: 1px solid #e0e0e0;border-radius: 4px 0px 0px 0px;">
+
+    <div class="toolbar">
+
+        <div class="clear" style="height:40px;"></div>
+
+        <ul class="toolbarInfoT1">
+            <li>Listen to your Sharium playlists from the toolbar.
+                Now you can listen to the music any time, no matter which site
+                you're currently viewing.
+            </li>
+        </ul>
+
+        <ul class="toolbarInfoT2">
+            <li>Connect your Sharium space to your
+                computer as a network folder in just a couple of clicks.
+                Upload and access your files from
+                your desktop applications
+            </li>
+        </ul>
+        <div class="clear" style="height:10px;"></div>
+
+
+        <ul class="toolbarInfoT1">
+            <li>Make & Share screenshots of your computer's workspace.</li>
+        </ul>
+        <ul class="toolbarInfoT2">
+            <li>Get extra 500 MB of free storage space!</li>
+        </ul>
+        <div class="clear" style="height:10px;"></div>
+
+        <ul class="toolbarInfoT1">
+            <li>A set of helpful features is intergated into the toolbar as well.</li>
+        </ul>
+        <ul class="toolbarInfoT2">
+            <li>Toolbar is fully configurable.<br>
+                Installs in seconds, uninstaller included.
+            </li>
+        </ul>
+        <div class="clear" style="height:10px;"></div>
+
+        <ul class="toolbarInfoT1">
+            <li>Works on Mac (Safari)<br>
+                <a href="sharium.dmg" style="color:#333;font-weight: bold;">Download for Mac</a></li>
+        </ul>
+        <ul class="toolbarInfoT2">
+            <li>Works on Windows (IE, Firefox, Chrome)<br>
+                <a href="sharium.exe" style="color:#333;font-weight: bold;">Download for Windows</a></li>
+
+        </ul>
+        <div class="clear"></div>
+
+
+    </div>
+</div>

@@ -1,0 +1,355 @@
+<div id="editorContainer">
+
+<div id="image_editor" style="position: relative;">
+  <!--div>Request: <div id="request"></div></div>
+  <div>Response: <div id="response"></div></div-->
+    <ul class="headerTree">
+        <li class="fmControls">
+            <a id="rotate_menu" class="menu peActions orient"></a>
+            <a id="crop_menu" class="menu peActions crop"></a>
+            <a id="effects_menu" class="menu peActions effects"></a>
+            <a id="frames_menu" class="menu peActions frames"></a>
+            <a id="enchance_menu" class="menu peActions enchance"></a>
+            <a id="undo_button" class="disabledBtn ui_button peActions undoChange"></a>
+            <a id="redo_button" class="disabledBtn ui_button peActions redoChange"></a>
+            <a id="ok_button" class="ui_button peActions saveChange" style="display: none;"></a>
+            <a id="cancel_button" class="ui_button peActions cancelChange" style="display: none;"></a>
+            <a id="exit_button" class="ui_button exit"></a>
+            <a id="save_button" class="ui_button btnMainC doneBtn">Save</a>
+            <div style="height:28px;width:75px;float:right;margin-top:3px;">
+              <div style="float:left;">
+                <input type="checkbox" id="phed_act" style="width:16px;height:16px;margin:0px;" checked>
+              </div>
+              <font style="font-size:12px;color:#888;">Post my<br> activity</font>
+            </div>
+        </li>
+    </ul>
+
+
+    <div class="showFile showFileSingle">
+       <div id="rotate_submenu" class="submenu optionsTips orientOptions" style="display: none;">
+           <ul>
+               <li class="orient1">
+                   <a id="rotate_left" function="_instant_action" class="action_button ui_button instant_action orientOptionsBtn"></a>
+               </li>
+               <li class="orient2">
+                   <a id="rotate_right" function="_instant_action" class="action_button ui_button instant_action orientOptionsBtn"></a>
+               </li>
+               <li class="orient3">
+                   <a id="flip_vertical" function="_instant_action" class="action_button ui_button instant_action orientOptionsBtn"></a>
+               </li>
+               <li class="orient4">
+                   <a id="flip_horizontal" function="_instant_action" class="action_button ui_button instant_action orientOptionsBtn"></a>
+               </li>
+           </ul>
+           <div class="optionPointerTop"></div>
+       </div>
+
+       <div id="crop_submenu" class="submenu optionsTips orientOptions cropOptions" style="display: none;">
+           <ul>
+               <li class="crop1">
+                   <a function="custom_crop" group="_crop" class="action_button ui_button freeze_action orientOptionsBtn"></a>
+               </li>
+               <li class="crop2">
+                   <a function="square_crop" group="_crop" class="action_button ui_button freeze_action orientOptionsBtn"></a>
+               </li>
+               <li class="crop5">
+                   <a function="4_3_crop" group="_crop" class="action_button ui_button freeze_action orientOptionsBtn"></a>
+               </li>
+               <li class="crop6">
+                   <a function="16_9_crop" group="_crop" class="action_button ui_button freeze_action orientOptionsBtn"></a>
+               </li>
+               <li class="crop3">
+                   <a function="3_4_crop" group="_crop" class="action_button ui_button freeze_action orientOptionsBtn"></a>
+               </li>
+               <li class="crop4">
+                   <a function="9_16_crop" group="_crop" class="action_button ui_button freeze_action orientOptionsBtn"></a>
+               </li>
+           </ul>
+           <div class="optionPointerTop"></div>
+       </div>
+
+       <div id="effects_submenu" class="submenu optionsTips orientOptions effectsOptions" style="display: none;">
+       <ul>
+           <li class="effect_sepia">
+               <a name="sepia" group="_effect" class="action_button ui_button effect_group orientOptionsBtn"></a>
+           </li>
+           <li class="effect_grayscale">
+               <a name="grayscale" group="_effect" class="action_button ui_button effect_group orientOptionsBtn"></a>
+           </li>
+           <li class="effect_vivid">
+               <a name="vivid" group="_effect" class="action_button ui_button effect_group orientOptionsBtn"></a>
+           </li>
+           <li class="effect_polaroid">
+               <a name="polaroid" group="_effect" class="action_button ui_button effect_group orientOptionsBtn"></a>
+           </li>
+           <li class="effect_posterize">
+               <a name="posterize" group="_effect" class="action_button ui_button effect_group orientOptionsBtn"></a>
+           </li>
+           <li class="effect_invert">
+               <a name="invert" group="_effect" class="action_button ui_button effect_group orientOptionsBtn"></a>
+           </li>
+           <li class="effect_dilate">
+               <a name="dilate" group="_effect" class="action_button ui_button effect_group orientOptionsBtn"></a>
+           </li>
+           <li class="effect_erode">
+               <a name="erode" group="_effect" class="action_button ui_button effect_group orientOptionsBtn"></a>
+           </li>
+           <li class="effect_pixelize">
+               <a name="pixelize" group="_effect" class="action_button ui_button effect_group orientOptionsBtn"></a>
+           </li>
+
+           <li class="effect_sobel">
+               <a name="sobel" group="_effect" class="action_button ui_button effect_group orientOptionsBtn"></a>
+           </li>
+           <li class="effect_threshold">
+               <a name="threshold" group="_effect" class="action_button ui_button effect_group orientOptionsBtn"></a>
+           </li>
+           <li class="effect_sketch">
+               <a name="sketch" group="_effect" class="action_button ui_button effect_group orientOptionsBtn"></a>
+           </li>
+           <li class="effect_toon">
+               <a name="toon" group="_effect" class="action_button ui_button effect_group orientOptionsBtn"></a>
+           </li>
+
+       </ul>
+    </div>
+    <div class="effects_submenu optionPointerTop" style="display: none;"></div>
+
+   <div id="frames_submenu" class="submenu optionsTips orientOptions effectsOptions framesOptions" style="display: none;">
+       <ul>
+           <li class="frame1">
+               <a num="1" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+           <li class="frame2">
+               <a num="2" resizable="true" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+           <li class="frame3">
+               <a num="3" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+           <li class="frame4">
+               <a num="4" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+           <li class="frame5">
+               <a num="5" resizable="true" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+
+           <li class="frame6">
+               <a num="6" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+
+           <li class="frame7">
+               <a num="7" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+
+           <li class="frame8">
+               <a num="8" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+
+           <li class="frame9">
+               <a num="9" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+
+           <li class="frame10">
+               <a num="10" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+
+           <li class="frame11">
+               <a num="11" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+
+           <li class="frame12">
+               <a num="12" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+
+           <li class="frame13">
+               <a num="13" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+
+           <li class="frame14">
+               <a num="14" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+
+           <li class="frame15">
+               <a num="15" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+           <li class="frame16">
+               <a num="16" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+
+           <li class="frame17">
+               <a num="17" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+
+           <li class="frame18">
+               <a num="18" resizable="true" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+
+           <li class="frame19">
+               <a num="19" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+
+           <li class="frame20">
+               <a num="20" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+
+           <li class="frame21">
+               <a num="21" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+
+           <li class="frame22">
+               <a num="22" paid="true" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+           <li class="frame23">
+               <a num="23" paid="true" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+           <li class="frame24">
+               <a num="24" paid="true" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+           <li class="frame25">
+               <a num="25" paid="true" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+           <li class="frame26">
+               <a num="26" paid="true" resizable="true" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+           <li class="frame27">
+               <a num="27" paid="true" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+           <li class="frame28">
+               <a num="28" paid="true" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+           <li class="frame29">
+               <a num="29" paid="true" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+           <li class="frame30">
+               <a num="30" paid="true" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+           <li class="frame31">
+               <a num="31" paid="true" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+           <li class="frame32">
+               <a num="32" resizable="true" group="_frame" class="action_button ui_button frame_group orientOptionsBtn"></a>
+           </li>
+       </ul>
+   </div>
+   <div class="frames_submenu optionPointerTop" style="display: none;"></div>
+   <!-- NEW -->
+   <div id="enchance_submenu" class="submenu optionsTips orientOptions" style="display: none;">
+       <ul>
+           <li class="hue_saturation">
+               <a id="hue_saturation" function="_enchance" name="hue_saturation" class="action_button ui_button instant_action orientOptionsBtn"></a>
+           </li>
+           <li class="contrast_brightness">
+               <a id="contrast_brightness" function="_enchance" name="contrast_brightness" class="action_button ui_button instant_action orientOptionsBtn"></a>
+           </li>
+           <li class="sharp">
+               <a id="sharp" function="_enchance" name="sharp" class="action_button ui_button instant_action orientOptionsBtn"></a>
+           </li>
+           <li class="autolevel">
+               <a id="autolevel" function="_instant_action" class="action_button ui_button instant_action orientOptionsBtn"></a>
+           </li>
+       </ul>
+       <div class="optionPointerTop"></div>
+   </div>
+
+      <div id="sliderHeader" class="headerTreeSubMenu">
+          <div id="slider_hue" class="slider tuneSettings">
+              <ul>
+                  <li class="tuneSettingsLabel">Hue</li>
+                  <li><a class="refreshTune ui_button"></a></li>
+                  <li class="tuneSettingsIcon hue"></li>
+                  <li>
+                    <div class="progressTune"></div>
+                  </li>
+              </ul>
+          </div>
+          <div id="slider_saturation" class="slider tuneSettings">
+              <ul>
+                  <li class="tuneSettingsLabel">Saturation</li>
+                  <li><a class="refreshTune ui_button"></a></li>
+                  <li class="tuneSettingsIcon saturation"></li>
+                  <li>
+                      <div class="progressTune"></div>
+                  </li>
+              </ul>
+          </div>
+          <div id="slider_contrast" class="slider tuneSettings">
+              <ul>
+                  <li class="tuneSettingsLabel">Contrast</li>
+                  <li><a class="refreshTune ui_button"></a></li>
+                  <li class="tuneSettingsIcon contrast"></li>
+                  <li>
+                      <div class="progressTune"></div>
+                  </li>
+              </ul>
+          </div>
+
+          <div id="slider_brightness" class="slider tuneSettings">
+              <ul>
+                  <li class="tuneSettingsLabel">Brightness</li>
+                  <li><a class="refreshTune ui_button"></a></li>
+                  <li class="tuneSettingsIcon brightness"></li>
+                  <li>
+                      <div class="progressTune"></div>
+                  </li>
+              </ul>
+          </div>
+
+          <div id="slider_sharp" class="slider tuneSettings">
+              <ul>
+                  <li class="tuneSettingsLabel">Sharpness</li>
+                  <li><a class="refreshTune ui_button"></a></li>
+                  <li class="tuneSettingsIcon sharp"></li>
+                  <li>
+                      <div class="progressTune"></div>
+                  </li>
+              </ul>
+          </div>
+
+      </div>
+   <div id="target-image-box" class="target_image_box" style="position: relative;">
+        <img id="target_image" style="position: absolute;"/>
+    </div>
+    <div id="framesetter" style="display: none;">
+      <div class="headerTreeSubMenu">
+          <div class="tuneSettings">
+              <ul>
+                  <li class="tuneSettingsLabel">Scale</li>
+                  <li><a id="slider_refresh" class="refreshTune"></a></li>
+                  <li class="tuneSettingsIcon scale1"></li>
+                  <li>
+                    <div id="framesetter-slider" class="progressTune framesetter_slider"></div>
+                  </li>
+                  <li class="tuneSettingsIcon scale2"></li>
+              </ul>
+          </div>
+
+          <div class="tuneSettings">
+              <ul>
+                  <li class="tuneSettingsLabel">Rotate</li>
+                  <li><a id="rotate_refresh" class="refreshTune"></a></li>
+                  <li class="tuneSettingsIcon rotate1"></li>
+                  <li>
+                      <div id="framesetter-rotate" class="progressTune framesetter_slider"></div>
+                  </li>
+                  <li class="tuneSettingsIcon rotate2"></li>
+              </ul>
+          </div>
+
+      </div>
+      <div id="framesetter-container" class="framesetter-container">
+          <div id="framesetter-frame" class="framesetter-frame">
+            <img/>
+          </div>
+          <img id="framesetter-photo" class="framesetter-photo"/>    
+      </div>
+    </div>
+   <div id="hidden_div" style="display: none; position: absolute;">
+   </div>
+
+</div>
+
+
+</div>
+<div id="editorFooter" class="sharLayoutFooter">
+</div>

@@ -1,0 +1,13 @@
+<div class="icon">    
+    <img class="icon_image" src="<%= @model.get_preview() %>">
+    <div class="filemarker"></div>
+</div>
+<div class="filename">
+    <%= @model.get("name") %>
+    <!--span class="size"><%= @model.get("size") %></span-->
+    <% if @model.get("type") != "directory": %>
+        <div class="sharing_icon">
+            <img src="<%= @model.get_sharing_icon() %>"/>
+        </div>
+    <% end %>
+</div>  

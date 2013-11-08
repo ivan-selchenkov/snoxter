@@ -1,0 +1,316 @@
+.customFile7 {
+//position: absolute;
+width:100%;
+max-width:1200px;
+margin-left: 0px;
+height: 80px;
+font-size:80px;
+z-index: 2;
+//filter: alpha(opacity: 0);
+//opacity: 0;
+}
+/*
+.playerEmpty{
+    float:left;
+    width:224px;
+    display:block;
+    margin:0;
+    padding: 6px 14px 3px 14px;
+    -webkit-border-radius: 0 4px 0 0px;
+    -moz-border-radius: 0 4px 0 0px;
+    border-radius: 0 4px 0 0px;
+    border: 1px solid #E0E0E0 ;
+    border-bottom: 0;
+    border-left: 0;
+    clear:both;
+    height:549px;
+
+}
+*/
+
+.playerEmpty{^M
+    float:left;^M
+    width:224px;^M
+    display:block;^M
+    margin:0;^M
+    padding: 6px 14px 3px 14px;^M
+    -webkit-border-radius: 0 4px 0 0px;^M
+    -moz-border-radius: 0 4px 0 0px;^M
+    border-radius: 0 4px 0 0px;^M
+    border: 1px solid #adadad;^M
+    border-bottom: 0;^M
+    border-left: 0;^M
+    clear:both;^M
+    height:549px;^M
+^M
+}^M
+
+.btnAdd {
+    color:#fff;
+    text-shadow: 0 1px 1px #37597E;
+    display:block;
+    padding: 4px 6px;
+    border: 1px solid #416ca0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #4a92d4; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #58a8e4 2%, #3c78c3 98%, #66b7e7 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(2%,#58a8e4), color-stop(98%,#3c78c3), color-stop(100%,#66b7e7)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#58a8e4 2%,#3c78c3 98%,#66b7e7 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#58a8e4 2%,#3c78c3 98%,#66b7e7 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#58a8e4 2%,#3c78c3 98%,#66b7e7 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#58a8e4 2%,#3c78c3 98%,#66b7e7 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57a7e3', endColorstr='#3c78c3',GradientType=0 ); /* IE6-9 */
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-align: center;
+    width: 220px;
+    font-weight: bold;
+    float: right;
+}
+.dlOrig {
+    color:#2a2a2a;
+    text-shadow: 0 1px 1px #C2C8CE;
+    display:block;
+    padding: 4px 6px;
+    border:1px solid #8c8c8c;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border-color: #8c8c8c #8e8f8f #8e8f8f #8e8f8f;
+    background: #b4bbc2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #dce3e7 1%, #b6bec4 51%, #9fa8af 100%, #a5adb5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(2%,#dce3e7), color-stop(51%,#b6bec4), color-stop(100%,#9fa8af), color-stop(100%,#a5adb5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#dce3e7 1%,#b6bec4 51%,#9fa8af 100%,#a5adb5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#dce3e7 1%,#b6bec4 51%,#9fa8af 100%,#a5adb5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#dce3e7 1%,#b6bec4 51%,#9fa8af 100%,#a5adb5 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#dce3e7 1%,#b6bec4 51%,#9fa8af 100%,#a5adb5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dae1e5', endColorstr='#a1a9b0',GradientType=0 ); /* IE6-9 */
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-align: center;
+    width: 220px;
+    font-weight: bold;
+    float: right;
+}
+.showFile{
+    height:483px;
+    display: block;
+    overflow: hidden;
+    padding:0;
+    width:100%;
+    position: relative;
+}
+.showFile img{
+//    height:413px;
+    float:left;
+}
+.showFileImgFolded {
+    height:413px;
+    float:left;
+    overflow: hidden;
+    display: block;
+    width:100%;
+    background: #fafafa;
+}
+.ava{
+padding-top:1px;
+    width:50px;
+    height:50px;
+    display: block;
+    overflow: hidden;
+    float:left;
+    margin-right:10px;
+}
+.ava img{
+    width:50px;
+}
+.whoShared {
+    padding: 10px;
+    display: block;
+    color:#999;
+    font-size: 11px;
+    height: 50px;
+    overflow: hidden;
+}
+.whoShared a {
+    color: #3182b8;
+    font-weight: bold;
+    font-size: 14px;
+}
+.addLike {
+    display: inline-block;
+    width: 16px;
+    height: 18px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url("../imgs/like.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+.whoShared .like {font-size: 11px; font-weight: normal; color: #333; line-height: 18px;}
+.whoShared .like a {font-size: 11px; font-weight: normal; color: #3b5998; line-height: 18px;}
+.whoShared span {
+    color: #5e666e;
+    font-weight: bold;
+    font-size: 14px;
+}
+.whoShared .when {line-height: 19px; color:#999; font-weight: normal; font-size: 11px;}
+
+/*.sharLayoutRightContainer{
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-right: 1px solid #E0E0E0;
+    width:99.8%
+}
+*/
+.back {
+    display: inline-block;
+    width: 22px;
+    height: 30px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url("../imgs/back.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:-1px;
+    left:-1px;
+}
+.fileAdd, .originAdd, .folderAdd {
+    display: inline-block;
+    width: 22px;
+    height: 18px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url("../imgs/sprite.png");
+    background-position: -204px -23px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:4px;
+    left:6px;
+}
+.fileAdd {
+
+    background-position: -204px -120px;
+
+}
+.originAdd {
+
+    background-position: -204px -148px;
+
+}
+.folderAdd {
+
+    background-position: -204px -174px;
+
+}
+.fmControls a.btnMainC {
+    background: #4a92d4; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #58a8e4 2%, #3c78c3 98%, #66b7e7 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(2%,#58a8e4), color-stop(98%,#3c78c3), color-stop(100%,#66b7e7)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#58a8e4 2%,#3c78c3 98%,#66b7e7 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#58a8e4 2%,#3c78c3 98%,#66b7e7 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#58a8e4 2%,#3c78c3 98%,#66b7e7 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#58a8e4 2%,#3c78c3 98%,#66b7e7 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57a7e3', endColorstr='#3c78c3',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #416ca0;
+    color:#fff;
+    text-shadow: 0 1px 1px #37597E;
+}
+.folderBox {
+    width: 205px;
+    display: block;
+    position: absolute;
+    top:0;
+    right:0;
+    height: 483px;
+    overflow: hidden;
+    border-left: 1px solid #e0e0e0;
+    background: #fff;
+// url("../imgs/filefilter_bg.png") repeat-x 0 bottom;
+}
+.folderBox p {
+    color:#5e666e;
+    font-size: 12px;
+    font-weight: bold;
+    padding:13px 0 20px 54px;
+    background: url("../imgs/folderfile_small.png") no-repeat 10px 10px;
+    display: block;
+    float: left;
+}
+.folderBox p a {
+    color: #3182B8;
+    font-size: 14px;
+    font-weight: bold;
+}
+.folderBox ul li {
+    display: inline-block;
+    float: left;
+    margin:0px 2px 4px 1px;
+    width:60px;
+    overflow: hidden;
+    padding: 2px;
+
+}
+.folderBox ul li.selected {
+   background: #6fadd8;
+    color: #fff;
+}
+.folderBox ul li.selected a {
+     color: #fff;
+ }
+
+.folderBox ul li a {
+    display: inline-block;
+    float: left;
+    width:50px;
+    overflow: hidden;
+    word-wrap: break-word;
+
+}
+.folderBox ul li img {
+    height:40px;
+}
+.showFileSingle {text-align: center;}
+.showFileSingle img, .fileTypeShow {margin:0 auto; float:none; padding-right:206px;}
+.fileTypeShow {
+    background: url("../imgs/fileshow.png") no-repeat 10px 40px;
+    width: 310px;
+    height: 400px;
+    display: block;
+padding-right:205px;
+    position: relative;
+}
+.fileSomeTypeShow {
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #ebecec;
+    font-weight: bold;
+    font-family: "Arial Black", Gadget, sans-serif;
+    position: absolute;
+    top:100px;
+    left:52px;
+}
+.fileTypeShowMusic { background: url("../imgs/fileshow_music.png") no-repeat 10px 40px;}
+.filePlayerTypeShow {
+    position: absolute;
+    top:270px;
+    left:56px;
+}
+.headerTree li.otherFilesH {
+    font-weight: normal;
+    display: inline-block;
+    margin:0;
+    padding: 0;
+    float:right;
+    width: 205px;
+    border-left: 1px solid #e0e0e0;
+    height: 38px;
+}

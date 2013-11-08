@@ -1,0 +1,409 @@
+@import "_base.sass"
+
+$helper_height: 100px
+$helper_width: 724px
+
+$icon_width: 90px
+$icon_height: 90px
+
+$file_container_height: 344px
+$search_form_height: 39px
+
+.uploadingBalloon
+  max-height: 300px
+  overflow: hidden
+
+#upldiv
+  z-index: 1000
+
+.balloonWraper
+  padding: 30px
+  position: absolute
+  z-index: 10005
+
+.balloon
+  position: relative
+  min-width: 300px
+  background: #e5eaeb
+  padding: 5px
+  border: 1px solid #848f9a
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+  border-radius: 3px
+  font-size: 16px
+  line-height: 20px
+
+  .link_row
+    display: none
+
+  .balloon_info
+    position: relative
+
+  .sharing_menu
+    position: absolute
+    z-index: 1
+    display: none
+    top: 0px
+    left: 0px
+    width: 200px
+    .menu_container
+      position: relative
+      .overlay
+        display: none        
+        position: absolute
+        background-color: white
+        opacity: 0.5
+        left: 0px
+        top: 0px
+      .sharing_menu_icon
+        float: left
+        padding: 5px
+      li
+        font-size: 13px
+        background-color: #fbfcfd
+        border: 1px solid #848f9a
+        @include roundcorners(3px)
+        &.selected
+          background-color: #4a92d4
+        a
+          &:hover
+            div
+              background-color: #4a92d4
+
+
+  .balloon_image
+    max-width: 100px
+    max-height: 100px
+
+  .info_wrapper
+    background: #fbfcfd
+    @include roundcorners(3px)
+
+  td
+    &.balloon_image
+      width: 100px
+    .image_wrapper
+      padding: 5px
+    .text_wrapper
+      padding: 5px 10px
+    vertical-align: top
+    text-align: left
+
+  .balloon_name
+    font-size: 18px
+    font-weight: bold
+
+  .balloonPointer
+    width: 20px
+    height: 10px
+    display: block
+    background: url("../imgs/sprite.png") no-repeat -27px -391px
+    position: absolute
+    left: 16px
+    bottom: -10px
+    z-index: 0
+  .paddingTop
+    width: 1px
+    height: 10px
+
+
+
+.fileListControls
+  margin-top: 5px
+  float: left
+  li
+    display: inline
+    float: left
+    margin: 2px
+    a
+      display: inline-block
+      margin-bottom: 6px
+      text-align: center
+      padding: 0.9%
+      border: 1px solid #E6E6E6
+      -webkit-border-radius: 4px
+      -moz-border-radius: 4px
+      border-radius: 4px
+      background-color: #F5F5F5
+      background-image: -moz-linear-gradient(center top , #FFFFFF, #E6E6E6)
+      background-repeat: repeat-x
+      border-color: #E6E6E6 #E6E6E6 #B3B3B3
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05)
+      &:hover
+        border: 1px solid #416ca0
+        -webkit-border-radius: 3px
+        -moz-border-radius: 3px
+        border-radius: 3px
+        background: #4a92d4
+        background: -moz-linear-gradient(top,  #ffffff 0%, #58a8e4 2%, #3c78c3 98%, #66b7e7 100%)
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(2%,#58a8e4), color-stop(98%,#3c78c3), color-stop(100%,#66b7e7))
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#58a8e4 2%,#3c78c3 98%,#66b7e7 100%)
+        background: -o-linear-gradient(top,  #ffffff 0%,#58a8e4 2%,#3c78c3 98%,#66b7e7 100%)
+        background: -ms-linear-gradient(top,  #ffffff 0%,#58a8e4 2%,#3c78c3 98%,#66b7e7 100%)
+        background: linear-gradient(to bottom,  #ffffff 0%,#58a8e4 2%,#3c78c3 98%,#66b7e7 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57a7e3', endColorstr='#3c78c3',GradientType=0 )
+      i
+        margin: auto
+        display: inline-block
+        width: 22px
+        height: 22px
+        margin: 2px
+        line-height: 14px
+        vertical-align: text-top
+        background-repeat: no-repeat
+        &.share
+          background-image: url("../imgs/sprite.png")
+          background-position: -148px -173px
+        &.download
+          background-image: url("../imgs/sprite.png")
+          background-position: -148px -203px
+#navigator
+  width: $total_width
+  height: 420px
+  border-top: 1px solid #e0e0e0
+  border-top-right-radius: 5px
+  #navigator_relative
+    position: relative
+  .sharedModeIcon
+    display: inline-block
+    width: 26px
+    height: 16px
+    line-height: 14px
+    vertical-align: text-top
+    &.mode_only_me
+      &.opened
+        background-image: url("/imgs/me_o.png")
+        opacity: 0.3
+      &.closed
+        background-image: url("/imgs/me_c.png")
+    &.mode_friends
+      &.opened
+        background-image: url("/imgs/fr_o.png")
+        opacity: 0.3
+      &.closed
+        background-image: url("/imgs/fr_c.png")    
+    &.mode_custom
+      &.opened
+        background-image: url("/imgs/sel_o.png")
+        opacity: 0.3
+      &.closed
+        background-image: url("/imgs/sel_c.png")
+
+
+  #sharing_mode
+    display: none
+    position: absolute
+    top: 0px
+    right: 0px
+    width: $total_width - $helper_width
+    height: $helper_height
+    li
+      background-color: #ffffff
+    &.mode_only_me
+      #mode_only_me
+        background-color: rgb(225, 225, 225)
+      #umodearr
+        top: 1px
+    &.mode_friends
+      #mode_friends
+        background-color: rgb(225, 225, 225)
+      #umodearr
+        top: 33px
+    &.mode_custom
+      #mode_custom
+        background-color: rgb(225, 225, 225)
+      #umodearr
+        top: 63px
+
+  .helper_block
+    width: $helper_width - 1px
+    height: $helper_height - 1px
+    float: left
+    overflow: hidden
+    border-left: 1px solid #e0e0e0
+    .upload_button
+      position: absolute
+      top: -30px
+      height: 80px
+      width: 100%
+      overflow: hidden
+      z-index: 200
+      margin-top: 5px
+      filter: "alpha(opacity: 0)"
+      opacity: 0
+
+  .player_block
+    width: $total_width - $helper_width
+    height: $helper_height
+    margin-top: -1px
+    .player
+      border-top: 1px solid #e0e0e0
+      border-right: 1px solid #e0e0e0
+      border-bottom: none
+      border-left: 1px solid #e0e0e0
+
+    .playlistExpander
+      width: 30px
+      height: 20px
+      display: block
+      position: absolute
+      top: 4px
+      z-index: 6000
+      right: 4px
+      background: url("../imgs/sprite.png") no-repeat 10px -387px
+
+    float: left
+    &.expanded
+      height: $total_height - $footer_height
+      float: right
+      .playlistExpander
+        background: url("../imgs/sprite.png") no-repeat 10px -414px
+
+  .main_block
+    width: $total_width
+    height: $total_height - $helper_height - $footer_height
+    float: left
+
+    &.collapsed
+      width: $helper_width
+      #files_container
+        width: $helper_width - 41px
+      #search_form
+        width: $helper_width - 2px
+      #create_new_folder_form
+        width: $helper_width - 2px
+      .headerTree
+        width: $helper_width - 1px
+
+    .inBox
+      background: url("../imgs/in1.png") no-repeat scroll 0 0 #EBEDEF
+      clear: both
+      display: block
+      height: 32px
+      margin: 0
+      padding: 0
+      position: absolute
+      text-align: left
+      top: 5px
+      width: 100%
+    .inBoxs
+      background: url("../imgs/in1.png") no-repeat scroll 0 0 #EBEDEF
+      clear: both
+      display: block
+      height: 32px
+      margin: 0
+      padding: 0
+      position: absolute
+      text-align: left
+      top: 5px
+      width: 100%
+
+    #search_form
+      width: $total_width - 2px
+      border-right: 1px solid #e0e0e0
+    #create_new_folder_form
+      width: $total_width - 2px
+      border-right: 1px solid #e0e0e0
+    .headerTree
+      background: url("../imgs/shadow.png") repeat-x scroll 0 0 transparent
+      border-right: 1px solid #E0E0E0
+      clear: both
+      display: block
+      height: 34px
+      overflow: hidden
+      width: $total_width - 2px
+    .exit
+      background: url("../imgs/exit.png") no-repeat scroll center center #EBEDEF
+      display: block
+      float: right
+      height: 32px
+      margin-right: 0px
+      overflow: hidden
+      position: relative
+      width: 38px
+      z-index: 100
+    #navigatorView    
+      display: block
+      width: 100%
+      clear: both
+      border-left: 1px solid #e0e0e0
+
+    #files_container
+      overflow-y: scroll
+      height: $file_container_height
+      width: $total_width - 2px - 40px
+      border-right: 1px solid #e0e0e0
+      padding: 20px
+      &.small
+        height: $file_container_height - $search_form_height
+
+      .file_item
+        margin: 10px
+        float: left
+        .icon
+          width: $icon_width
+          height: $icon_height
+          position: relative
+          overflow: hidden
+          img
+            position: absolute
+          .filemarker
+            position: absolute
+            bottom: 0px
+            right: 0px
+            width: 34px
+            height: 35px
+          .filemarker.hover
+            background: url( '/imgs/check_mark.png' )
+        .filename
+          text-align: center
+          width: 100px
+          height: 30px
+          overflow: hidden
+          word-wrap: break-word
+          position: relative
+          padding-right: 10px
+          padding-bottom: 10px
+          .sharing_icon
+            position: absolute
+            right: 0px
+            bottom: 0px
+            opacity: 0.5
+          .size
+            color: gray
+      .file_item.checked
+        .filemarker
+          background: url( '/imgs/check_mark_p.png' )
+
+
+  .footer
+    width: $total_width
+    clear: both
+    height: $footer_height
+
+  .divider
+    display: inline-block
+    width: 17px
+    height: 34px
+    line-height: 14px
+    vertical-align: text-top
+    background: url("../imgs/divide3.png") no-repeat center center
+    float: left
+    margin-right: 5px
+
+  .breadcrumb
+    float: left
+    padding-top: 9px
+
+
+.optionsTips2
+  width: 273px
+  -webkit-border-radius: 0px 4px 0px 0px
+  -moz-border-radius: 0px 4px 0px 0px
+  border-radius: 0px 4px 0px 0px
+  margin-top: 1px
+  padding-top: 0px
+  padding-right: 2px
+  background: #fff
+  position: absolute
+  z-index: 8000

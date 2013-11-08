@@ -1,0 +1,18 @@
+<div id="viewerLeft">
+
+</div>
+<div id="viewerRight">
+  <div id="filesBlock">
+  </div>
+  <div id="trandingBlock">
+    <div class="otherFilesH headerTree">
+      <div id="wsh" class="whoShared">Trending</div>
+    </div>
+    <div id="trendingContainer">        
+    </div>
+  </div>
+</div>
+
+<div id="viewerFooter" class="sharLayoutFooter">
+  
+</div>

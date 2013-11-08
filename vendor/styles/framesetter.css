@@ -1,0 +1,43 @@
+/* FrameSetter */
+.framesetter-frame {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+}
+
+.framesetter-container {
+   background-color: black;
+   width: 450px;
+   height: 450px;
+   position: relative;
+   overflow: hidden;  
+   margin: 0 auto;
+}
+
+.framesetter-photo {
+    height: auto;
+    width: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 998;
+}
+.framesetter_slider {
+  width: 230px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#framesetter {
+  height: 450px;
+}
+
+#framesetter-slider a, #framesetter-rotate a {
+    cursor: pointer;
+    width: 21px;
+    height: 21px;
+    border: none;
+    background: url("../img/photoeditor.png") no-repeat scroll 0 -617px transparent;
+}
